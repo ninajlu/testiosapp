@@ -9,10 +9,13 @@
 #import "SecondViewController.h"
 
 @interface SecondViewController ()
+- (IBAction)clicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *number;
 
 @end
 
 @implementation SecondViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,4 +27,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clicked:(id)sender {
+    self.number.text = @"clicked";
+    
+}
 @end
